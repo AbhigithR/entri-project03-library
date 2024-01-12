@@ -498,7 +498,7 @@ WHERE YEAR(Issue_date) = 2023 AND MONTH(Issue_date) = 6;
 
 -- 9. Retrieve book_title from book table containing history. --
 
-Select Book_title  From Books  WHERE Category LIKE  '%History%';
+Select Book_title  From Books  WHERE Category LIKE 'History';
 
 -- 10 .Retrieve the branch numbers along with the count of employees for branches having more than 5 employees.--
 
