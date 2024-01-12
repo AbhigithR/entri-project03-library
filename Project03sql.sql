@@ -451,30 +451,30 @@ Select * From Books;
 
 
 
-# 1. Retrieve the book title, category, and rental price of all available books.
+-- 1. Retrieve the book title, category, and rental price of all available books.--
 
 SELECT Book_title, Category, Rental_Price FROM Books WHERE STATUS = 'YES';
 
 
-# 2.  List the employee names and their respective salaries in descending order of salary.
+-- 2.  List the employee names and their respective salaries in descending order of salary.--
 
 SELECT Emp_Name, Salary FROM Employee ORDER BY Salary DESC;
 
 
 
-# 3. Retrieve the book titles and the corresponding customers who have issued those books.
+-- 3. Retrieve the book titles and the corresponding customers who have issued those books.--
 
 
 SELECT Books.Book_title, IssueStatus.Issued_Cust FROM Books JOIN IssueStatus ON Books.ISBN = IssueStatus.ISBN_book;
 
 
 
-# 4. Display the total count of books in each category
+-- 4. Display the total count of books in each category--
 
 SELECT Category, COUNT(*) AS Total_Books_On_Each_Category FROM Books GROUP BY Category;
 
 
-# 5. Retrieve the employee names and their positions for the employees whose salaries are above Rs.50,000.
+-- 5. Retrieve the employee names and their positions for the employees whose salaries are above Rs.50,000.--
 
 SELECT Emp_Name, Position From Employee Where Salary > 50000;
 
